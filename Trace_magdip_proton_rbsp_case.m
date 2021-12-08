@@ -226,4 +226,4 @@ for E_id = [3,4,5,6]
 end
 flux_ob_rec = flux_ob;
 save('simulation_result\sim_90_X5.5_Lm_full.mat');
-save('simulation_result\sim_27_X5.5_Lm_full.mat');
+% save('simulation_result\sim_27_X5.5_Lm_full.mat');
