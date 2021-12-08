@@ -33,13 +33,13 @@ To run this set of code, first one should put the ephemeris datasets and HOPE me
 
 Run Instructions
 -----
-After data preparation, first run **Trace_magdip_proton_rbsp_case.m**, and this step will save the results in the "/simulation_result" folder, see Line 228 `save('simulation_result\sim_90_X5.5_Lm_full.mat');`. 
+After data preparation, first run **Trace_magdip_proton_rbsp_case.m**, and this step will save the results in the "/simulation_result" folder, see Line 228 `save('simulation_result\sim_90_X5.5_Lm_full.mat');`. (Run time: several hours.)
 
-Then run **Trace_magdip_proton_rbsp_case_smpa.m**, and this step will also save the results in the "/simulation_result" folder, see Line 229 `save('simulation_result\sim_27_X5.5_Lm_full.mat');`.
+Then run **Trace_magdip_proton_rbsp_case_smpa.m**, and this step will also save the results in the "/simulation_result" folder, see Line 229 `save('simulation_result\sim_27_X5.5_Lm_full.mat');`. (Run time: several hours.)
 
-Then run **Plot_rbsp_flux_case.m**, you will get the comparison between the energy spectra from satellite observations and simulation results.
+Then run **Plot_rbsp_flux_case.m**, you will get the comparison between the energy spectra from satellite observations and simulation results. (Run time: less than one minute.)
 
-Run **Trace_magdip_proton_rbsp_case_plot.m**, the drift trajectories of injected perpendicular-moving protons will be displayed.
+Run **Trace_magdip_proton_rbsp_case_plot.m**, the drift trajectories of injected perpendicular-moving protons will be displayed. (Run time: less than one minute.)
 
 Demo Output
 -----
