@@ -48,3 +48,7 @@ In the "/simulation_result" folder, you will find **flux_energy_spectrum.png** f
 Note
 ------
 Sometimes, there will be an error report "The text progress must be initialized with a string" for the textprogressbar.m function. Just "clear" and rerun the code.
+
+License
+------
+This code is covered under the MIT License.
