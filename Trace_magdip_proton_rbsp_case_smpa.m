@@ -106,7 +106,7 @@ for E_id = [3,4,5,6]
         L0=5.5;
         L0_s = L0;
         sigmaL_s = 0.2;
-        deltaB0_s = -50*1e-9; % [T] % set this as zeros for bouncing protons
+        deltaB0_s = 0; %-50*1e-9; % [T] % set this as zeros for bouncing protons
         MLT0_s = meetMLT-(time_ob(T_id)-meettime)*v_MLT_hr; % the location of smaller dip at the observation time.
         sigMLT_s = 0.3;
 
@@ -114,8 +114,8 @@ for E_id = [3,4,5,6]
         L0_l = L0;
         sigmaL_l = 0.4;
         sigmal_l_c = 0.4;
-        deltaB0_l = -30*1e-9;  % [T] % set this as zeros for bouncing protons
-        deltaB0_l_c = -50*1e-9; % [T] % set this as zeros for bouncing protons
+        deltaB0_l = 0; %-30*1e-9;  % [T] % set this as zeros for bouncing protons
+        deltaB0_l_c = 0; %-50*1e-9; % [T] % set this as zeros for bouncing protons
         MLT0_l = MLT0_s+0.5;
         delMLT_l = 0.2;
         factor_l = 3;
@@ -138,8 +138,8 @@ for E_id = [3,4,5,6]
             Particle(i).Charge = 1.0; %[elementary charge]
             Particle(i).Mass = 1.6726E-27/9.1094E-31; %[el-n mass], here for proton.
             Particle(i).W_ini = E_ob(E_id)*10^-3; %[MeV]
-            Particle(i).Pitch_ini = 90;  %initial pitch angle [deg] % for perpendicular-moving protons
-            % Particle(i).Pitch_ini = 27; %initial pitch angle [deg] % for bouncing protons
+            % Particle(i).Pitch_ini = 90;  %initial pitch angle [deg] % for perpendicular-moving protons
+            Particle(i).Pitch_ini = 27; %initial pitch angle [deg] % for bouncing protons
             Particle(i).R(1,1) = x_start; %x - [R.E.]
             Particle(i).R(2,1) = y_start; %y - [R.E.]
             Particle(i).R(3,1) = z_start; %y - [R.E.]
@@ -225,5 +225,5 @@ for E_id = [3,4,5,6]
     end
 end
 flux_ob_rec = flux_ob;
-save('simulation_result\sim_90_X5.5_Lm_full.mat'); % use this for perpendicular-moving protons
-% save('simulation_result\sim_27_X5.5_Lm_full.mat'); % use this for bouncing protons
+% save('simulation_result\sim_90_X5.5_Lm_full.mat'); % use this for perpendicular-moving protons
+save('simulation_result\sim_27_X5.5_Lm_full.mat'); % use this for bouncing protons
