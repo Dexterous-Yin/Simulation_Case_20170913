@@ -1,5 +1,5 @@
 # Simulation_Case_20170913
-This set of test-particle simulation codes is used to reproduce the observations for pitch-angle distribution of protons fluxes from Van Allen Probe B during the magnetic dip event on 13 September 2017. The basic algorithm of this set of codes is to use the Runge-Kutta method ("ode45" function in MATLAB) to calculate the motion of the particle's guiding center (Northrop, 1963). 
+This set of test-particle simulation codes is used to reproduce the observations for pitch-angle distribution of proton fluxes from Van Allen Probe B during the magnetic dip event on 13 September 2017. The basic algorithm of this set of codes is to use the Runge-Kutta method ("ode45" function in MATLAB) to calculate the motion of the particle's guiding center (Northrop, 1963). 
 
 Cite the code: [![DOI](https://zenodo.org/badge/435510084.svg)](https://zenodo.org/badge/latestdoi/435510084)
 
